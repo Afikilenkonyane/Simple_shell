@@ -2,15 +2,15 @@
 #include <unistd.h>
 
 /**
- * main - write a pid
+ * main - print pid
  *
- * Return: Always 0.
- */
+ * Return: ALWAYS  0
+*/
 int main(void)
 {
-    pid_t parent_pid;
+	pid_t my_pid;
 
-    parent_pid = getppid();
-    printf("%u\n", parent_pid);
-    return (0);
+	my_pid = getpid();
+	printf("%u\n", my_pid);
+	return (0);
 }
